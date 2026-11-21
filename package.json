@@ -1,0 +1,10 @@
+{
+  "name": "yangtian-academic-homepage",
+  "version": "1.0.0",
+  "private": true,
+  "description": "杨田 · 个人学术主页",
+  "scripts": {
+    "build": "node build.mjs",
+    "start": "node server.mjs"
+  }
+}
