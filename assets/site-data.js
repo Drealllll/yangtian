@@ -18,7 +18,6 @@ window.SITE_DATA = {
       "en": "Eastern Hepatobiliary Surgery Hospital\nNaval Medical University"
     },
     "email": "yangtian6666@hotmail.com",
-    "github": "https://github.com/Drealllll/yangtian",
     "pubmed": "https://pubmed.ncbi.nlm.nih.gov/?term=Yang+T%5BAuthor%5D+AND+Eastern+Hepatobiliary",
     "portraitSource": "https://kjc.xzhmu.edu.cn/info/1013/3223.htm"
   },
