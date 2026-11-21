@@ -381,6 +381,36 @@ button.text-link { border: 0; padding: 0; background: none; font: inherit; line-
   .header-actions .icon-button { width: 27px; }
   .footer-top { flex-wrap: wrap; }
 }
+/* Compact academic homepage, following the reference site's reading order. */
+.home-intro { margin-bottom: 28px; }
+.brand-mark { display: none; }
+.brand-name { letter-spacing: .02em; }
+.brand-subtitle { display: inline; font-size: inherit; color: inherit; letter-spacing: inherit; }
+.section-heading { color: var(--accent); }
+.research-card { background: var(--surface); }
+.home-lead { margin: 0; font-size: 1.125rem; line-height: 1.9; }
+.home-lead strong { color: var(--heading); font-weight: 650; }
+.home-intro .intro-actions { margin: 22px 0 28px; }
+.research-card .research-subtitle { font-size: .8125rem; line-height: 1.5; color: var(--accent); margin: 0 0 12px; }
+.clinical-focus { display: flex; flex-wrap: wrap; gap: 12px; }
+.clinical-pill { padding: 12px 18px; border: 1px solid var(--border); border-radius: 24px; background: var(--surface-accent); color: var(--heading); font-size: 1rem; }
+.clinical-pill small { display: inline-block; margin-left: 8px; color: var(--muted); font-size: .8125rem; }
+@media (min-width: 901px) {
+  .portrait { width: 175px; height: 175px; border-radius: 50%; object-position: center 20%; }
+  .portrait-caption { display: none; }
+  .portrait-wrap { margin-bottom: 20px; }
+  .site-layout { padding-top: 34px; gap: 28px; }
+  .header-inner { height: 65px; }
+  .page-content { max-width: 800px; }
+  .profile-sidebar { top: 100px; }
+}
+@media (max-width: 640px) {
+  .portrait { width: 82px; height: 82px; border-radius: 50%; object-position: center 20%; }
+  .portrait-caption { display: none; }
+  .home-lead { font-size: 1rem; }
+  .clinical-pill { width: 100%; padding: 10px 16px; border-radius: 6px; }
+  .clinical-pill small { display: block; margin-left: 0; margin-top: 3px; }
+}
 @media print {
   :root, [data-theme="dark"] { --bg: #fff; --surface: #fff; --surface-accent: #fff; --text: #222; --heading: #111; --muted: #555; --accent: #111; --border: #ccc; --soft-border: #ddd; }
   body { font-size: 10pt; line-height: 1.6; }
