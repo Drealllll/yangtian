@@ -31,6 +31,22 @@ node server.mjs
 
 仓库提供 `.github/workflows/pages.yml`。源码推送到 `main` 后，在 GitHub 仓库 Settings → Pages → Build and deployment 中选择 GitHub Actions，即可通过该工作流部署。默认项目网址为 `https://drealllll.github.io/yangtiancr/`；该地址是否已启用，以仓库 Pages 设置和 Actions 运行结果为准。
 
+### 自定义域名 yangtian.me
+
+先在仓库 Settings → Pages → Custom domain 填写 `yangtian.me` 并保存，再在域名的 DNS 管理平台配置：
+
+| 主机记录 | 类型 | 记录值 |
+| --- | --- | --- |
+| @ | A | 185.199.108.153 |
+| @ | A | 185.199.109.153 |
+| @ | A | 185.199.110.153 |
+| @ | A | 185.199.111.153 |
+| www | CNAME | drealllll.github.io |
+
+解析成功、证书签发后，在 Pages 中勾选 Enforce HTTPS。此仓库使用 GitHub Actions 发布，添加 `CNAME` 文件不能代替 Pages 中的域名设置。具体步骤以 [GitHub 官方说明](https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/managing-a-custom-domain-for-your-github-pages-site)为准。
+
+工作流从 Pages 设置自动读取网站地址，生成各页面的 canonical 与分享链接。修改域名设置后重新运行部署即可同步这些链接。本地运行 `node build.mjs` 默认使用 GitHub 项目网址；可设置环境变量 `SITE_URL=https://yangtian.me` 检查自定义域名输出。域名是否已生效，应以公共 DNS 和实际访问结果为准。
+
 论文为部分选录，不是完整发表列表。行政职务、总论文数、H指数、ORCID与社交账号未在未确认的情况下补写。软件栏目展示本站实际源码，未将参考站作者的软件署给杨田。头像使用公开学术活动中的人物照片，来源保留在网页中，可随时替换为本人提供的授权照片。
 
 版式参考：https://zhangkaicr.github.io/software/?lang=zh 。本站使用原生 HTML/CSS/JavaScript，未使用或声称使用 Jekyll / AcademicPages 的代码。
