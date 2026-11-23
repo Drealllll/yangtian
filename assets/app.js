@@ -147,7 +147,7 @@
     const dark=document.documentElement.dataset.theme==='dark';
     document.getElementById('theme-toggle').innerHTML=icon(dark?'sun':'moon');
     document.getElementById('theme-toggle').setAttribute('aria-label',dark?t('切换浅色模式','Switch to light theme'):t('切换深色模式','Switch to dark theme'));
-    document.querySelector('meta[name="theme-color"]').content=dark?'#151b20':'#146b74';
+    document.querySelector('meta[name="theme-color"]').content=dark?'#101b2d':'#163a63';
   }
   function toast(text) {
     const el=document.querySelector('.toast');el.textContent=text;el.classList.add('is-open');
