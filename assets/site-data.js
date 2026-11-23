@@ -19,6 +19,7 @@ window.SITE_DATA = {
     },
     "email": "yangtian6666@hotmail.com",
     "pubmed": "https://pubmed.ncbi.nlm.nih.gov/?term=Yang+T%5BAuthor%5D+AND+Eastern+Hepatobiliary",
+    "pubmedHcc": "https://pubmed.ncbi.nlm.nih.gov/?term=Yang+T%5BAuthor%5D+AND+Eastern+Hepatobiliary+AND+hepatocellular+carcinoma",
     "portraitSource": "https://kjc.xzhmu.edu.cn/info/1013/3223.htm"
   },
   "publications": [

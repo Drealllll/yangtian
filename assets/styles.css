@@ -446,6 +446,19 @@ button.text-link { border: 0; padding: 0; background: none; font: inherit; line-
 .research-metrics strong { display: block; font-size: 1.65rem; color: var(--heading); line-height: 1.4; }
 .research-metrics span { display: block; font-size: .875rem; line-height: 1.6; margin-top: 5px; }
 .registration-note { color: var(--muted); font-size: .875rem; overflow-wrap: anywhere; }
+.literature-search { padding: 20px; margin: 0 0 26px; border: 1px solid var(--border); border-radius: 6px; background: var(--surface); }
+.literature-search p { margin: 0; font-size: .9375rem; }
+.literature-search .intro-actions { margin: 16px 0 0; }
+.patent-card { padding: 22px 0; border-bottom: 1px solid var(--soft-border); break-inside: avoid; }
+.patent-card:first-child { padding-top: 0; }
+.patent-card h3 { font-size: 1.0625rem; line-height: 1.8; margin: 0 0 12px; }
+.patent-date, .patent-inventors, .patent-original-title { font-size: .875rem; line-height: 1.75; color: var(--muted); }
+.patent-date { margin: 0 0 8px; font-variant-numeric: tabular-nums; }
+.patent-original-title { margin: 0 0 12px; }
+.patent-inventors { margin: 12px 0 0; }
+.patent-identifiers { display: flex; flex-wrap: wrap; gap: 12px 36px; margin: 0; font-size: .9375rem; }
+.patent-identifiers dt { color: var(--muted); font-size: .875rem; margin-bottom: 3px; }
+.patent-identifiers dd { margin: 0; font-variant-numeric: tabular-nums; overflow-wrap: anywhere; }
 .academic-row { display: grid; grid-template-columns: 150px minmax(0, 1fr); gap: 20px; padding: 15px 0; border-bottom: 1px solid var(--soft-border); break-inside: avoid; }
 .academic-period { font-size: .875rem; font-variant-numeric: tabular-nums; color: var(--muted); padding-top: 2px; }
 .academic-row h3 { font-size: 1rem; font-weight: 600; line-height: 1.7; margin-bottom: 4px; }
